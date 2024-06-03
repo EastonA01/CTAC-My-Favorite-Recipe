@@ -1,0 +1,169 @@
+.container {
+    background-color: #97cc86;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container ul li {
+    margin-right: 10px;
+}
+
+.container ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container ul li a:hover {
+    text-decoration: underline;
+}
+
+.container .brand {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.container .hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.container .menu {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .container ul {
+        flex-direction: column;
+    }
+
+    .container .hamburger {
+        display: block;
+    }
+
+    .container .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .menu li {
+        display: block;
+        margin: 0;
+    }
+
+    .container .menu li a {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f1d592;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+body.ingredients {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 2em;
+    color: #006400;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    color: #45494D;
+}
+
+li.ingredients {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pieDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pieDiv img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+table, th, td {
+    border: 1px solid;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Media Queries for responsive design */
+@media (min-width: 600px) {
+    .pieDiv {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+}

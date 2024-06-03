@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li class="brand">Key Lime Pie Factory</li>
+            <li class="hamburger"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
+            <div id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ingredients.html">Ingredients</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="form.html">Form</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1>Questions? Comments? Put them here!</h1>
+    <form>
+        <label>Name</label>
+        <input></input>
+        <label>Email</label>
+        <input></input>
+        <label>Question</label>
+        <textarea rows="4" cols="50"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer class="container">Easton Anderson 2024</footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

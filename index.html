@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li class="brand">Key Lime Pie Factory</li>
+            <li class="hamburger"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
+            <div id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ingredients.html">Ingredients</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="form.html">Form</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1>Key Lime Pie</h1>
+    <p>
+        Key lime pie is my favorite food because despite its simplicity in its creation- key lime pie has a refreshing level of tartness that I find absolutely <b>irresistible.</b> 
+        <i>Despite</i> the allure of some other tasty treats such as peanut butter pie- key lime has it beat due to its ability to be enjoyed <b>endlessly.</b>
+        With a combination of sweetness, tartness and citrus- it truly is a dessert that can be enjoyed by anyone even in the hottest of days!
+    </p>
+    <hr>
+    <div class="pieDiv">
+        <p>Make sure to try it with a graham cracker crust for the ultimate experience!<br><br>You'll be hooked from the first bite!</p>
+        <img
+        sizes="(max-width: 600px) 100vw, (max-width: 768px) 50vw, 33vw"
+        srcset="
+        images/pie_jlpoca_c_scale,w_200.jpg 200w,
+        images/pie_jlpoca_c_scale,w_563.jpg 563w,
+        images/pie_jlpoca_c_scale,w_819.jpg 819w,
+        images/pie_jlpoca_c_scale,w_1030.jpg 1030w,
+        images/pie_jlpoca_c_scale,w_1222.jpg 1222w,
+        images/pie_jlpoca_c_scale,w_1400.jpg 1400w"
+        src="images/pie_jlpoca_c_scale,w_200.jpg"
+        alt="Key Lime Pie">
+    </div>
+
+    <footer class="container">
+        <ul>
+            <li>Easton Anderson 2024</li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients to make Key Lime Pie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li class="brand">Key Lime Pie Factory</li>
+            <li class="hamburger"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
+            <div id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ingredients.html">Ingredients</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="form.html">Form</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1>Ingredients to make Key Lime Pie</h1>
+    
+    <h2>For the crust:</h2>
+    <ul>
+        <li  class="ingredients">1½ cups finely crushed graham cracker crumbs, from about 12 whole graham crackers</li>
+        <li  class="ingredients">⅓ cup packed light brown sugar</li>
+        <li  class="ingredients">4 tablespoons unsalted butter, melted</li>
+    </ul>
+    <h2>For the filling:</h2>
+    <ul>
+        <li  class="ingredients">Two 14-oz cans sweetened condensed milk</li>
+        <li  class="ingredients">1 cup plain Greek yogurt (2% or whole milk)</li>
+        <li  class="ingredients">1 tablespoon grated lime zest</li>
+        <li  class="ingredients">¾ cup fresh lime juice</li>
+    </ul>
+    
+    <footer class="container">Easton Anderson 2024</footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
